@@ -201,9 +201,8 @@ __global__ void mine_kernel(unsigned char * _prefix_coinbase, unsigned char * _s
     const int __extranonce2_loop_limit = 8;
 
     int __nonce_counter = 0;
-    //uint32_t __nonce_limit = 77164; // for 50% chance of duplicate
-    //uint32_t __nonce_limit = 30000; // for 50% chance of duplicate
-    //uint32_t __nonce_limit = 20990; // for 5% chance of duplicate
+    //const uint32_t __nonce_limit = 77164; // for 50% chance of duplicate
+    //const uint32_t __nonce_limit = 20990; // for 5% chance of duplicate
     //const uint32_t __nonce_limit = 9299; // for 1% chance of duplicate
     const int __nonce_limit = 6554; // for 0.5% chance of duplicate
 

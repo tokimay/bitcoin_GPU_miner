@@ -193,7 +193,6 @@ class Miner:
         _start_time = datetime.now()
         _start_mine = datetime.now()
         _start_app = datetime.now()
-        hashes = []
         while True:
             if self._is_new_job:
                 try:
@@ -341,9 +340,6 @@ class Miner:
                         log(LogTypes.TEXT, f"Finding time= '{datetime.now() - _start_mine}'")
                         _start_mine = datetime.now()
 
-                        hashes.append(__header_hash)
-                        print(hashes)
-                        print(F"count = {len(hashes)} in {datetime.now() - _start_app}")
                     self._loop_counter += 1
                     _loop_time = datetime.now()
                     log(LogTypes.TEXT,
