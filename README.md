@@ -5,7 +5,7 @@ Bitcoin GPU mining is not profitable nowadays.
 
 This source can help you understand what exactly happens between a bitcoin stratum pool server and a miner.
 
-For the stratum poll server, you can use ***[this source]***(https://github.com/tokimay/bitcoin_stratum_server). 
+For the stratum poll server, you can use ***[this source](https://github.com/tokimay/bitcoin_stratum_server)***. 
 
 
 Install requirement: <br />
