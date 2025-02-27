@@ -384,8 +384,6 @@ class Miner:
                     self._target = difficulty_to_target(_difficulty[0])
                     log(LogTypes.SPECIAL, f"New difficulty received",f"{_difficulty}")
                     log(LogTypes.TEXT, f"Target is set to", f"{self._target}")
-                    if self._is_job_on_gpu:
-                        self._is_new_job = True
                     self._is_job_on_gpu = False
                     return True
 
